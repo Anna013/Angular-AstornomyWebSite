@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <!-- Custom styles for this template -->
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="md-auto">
+            <div class="row mt-3">
+                <div>
+                    <h3 class="float-md-start mb-0">Astronomy site</h3>
+                    <nav class="navbar navbar-dark bg-dark float-md-end">
+                        <a style="color: white" class="nav-link" routerLink="/home">Home</a>
+                        <a style="color: white" class="nav-link" routerLink="/gallery">Gallery</a>
+                        <span><a style="color: white" class="nav-link" routerLink="/event/list"
+                                routerLinkActive="active">News</a></span>
+                        <span><a style="color: white" class="nav-link" routerLink="/register"
+                                routerLinkActive="active">Register</a></span>
+                        <span><a style="color: white" class="nav-link" routerLink="/login"
+                                routerLinkActive="active">Login</a></span>
+                        <a style="color: white" class="nav-link active" aria-current="page" href="#bottom">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container">
+            <div class="back" *ngIf="event != undefined">
+                <div class="row mt-5">
+                    <div class="col-lg-4 ">
+                        <div class="first">
+                            <br>
+                            <div class="name ">
+                                <h3>{{event.name}}</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="img">
+                                <div class="views-field views-field-field-news-image">
+                                    <div class="field-content"><img width="200" height="200" [src]="event.imageUrl">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="secound">
+                                <div class="description">
+                                    <p>{{event.date}}</p>
+                                    <p>{{event.description}}</p>
+                                    <p>{{event.fullText}}</p>
+                                </div>
+                                <br>
+                                <iframe width="100%" height="420" src="https://www.youtube.com/embed/8ZNvMXHBZbY">
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-auto text-white-50">
+            <div class="row">
+                <p> Astronomy site</p>
+            </div>
+            <div class="row">
+                <section class="">
+                    <!-- Footer -->
+                    <footer class="image text-white text-center">
+
+                        <div class="container p-4">
+
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase">Contact</h5>
+
+                                    <p>
+                                        If you want to contact us, informations are offered.
+                                        You don't know where we are? How to conect us? Want to know more? We will be
+                                        glad to be able to help you and that you are interested in our small
+                                        astronomical organization
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-center">Contact name</h5>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <p>Gmail:</p>
+                                        </li>
+                                        <li>
+                                            <p>Telefone:</p>
+                                        </li>
+                                        <li>
+                                            <p>Address:</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase mb-0">Info</h5>
+
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <p>astns@gmail.com</p>
+                                        </li>
+                                        <li>
+                                            <p>0800 356118</p>
+                                        </li>
+                                        <li>
+                                            <p>Petrovaradin Fortres 11</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                            © 2020 Astronomy.com
+
+                        </div>
+
+                    </footer>
+                    <!-- Footer -->
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

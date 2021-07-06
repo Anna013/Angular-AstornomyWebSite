@@ -1,0 +1,54 @@
+
+.name{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.button{
+    text-align: right;
+}
+
+.secound{
+    text-align: left;
+    margin-left: 2em;
+
+}
+.value{
+    text-align: center;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.back{
+    border-bottom: ridge;
+    border-radius: 25px;
+   /* background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-science-grid-globe-banner-background-image_209974.jpg');
+    */
+    background-color: rgba(0,0,0, 0.7);
+}
+
+.see{
+    margin-left: 1em;
+    margin-right: 1em;
+    
+}
+
+.description {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+.attendace{
+    margin-left: 1.5em;
+}
+
+.img{
+    margin-left: 1.5em;
+    text-align: center;
+}
+
+.btn{
+    margin-right: 1em;
+    margin-top: 1em;
+}
