@@ -1,1 +1,1 @@
-# nwp-projekat-project is on master branch
+# nwp-project->project is on master branch
