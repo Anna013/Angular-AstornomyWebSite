@@ -1,0 +1,55 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('https://www.teahub.io/photos/full/135-1351429_wallpaper-earth-planet-4k-8k-space-8k-earth.jpg');
+background-size: cover, contain;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.image{
+    background-image: url('https://t3.ftcdn.net/jpg/02/24/44/70/360_F_224447009_zSRwNZa8kd8pywa6YSaVmMecWayHF1j5.jpg');
+}
+
+.news{
+    background: transparent;
+    border-style: ridge;
+    border-radius: 25px;
+    background-color: rgba(0,0,0, 0.7);
+   /* background-image: url('https://media.istockphoto.com/photos/abstract-grunge-dark-blue-background-picture-id1156315649?k=6&m=1156315649&s=612x612&w=0&h=HODtv5UDQMuobizQW-X2Y4pLvSH-WxWAktK-U17L7Ug=');*/
+}
+.block-title {
+    background-image: url('https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg?size=626&ext=jpg&ga=GA1.2.198510956.1622073600');
+    text-align: center;
+    border-bottom: ridge;
+    border-radius: 25px;
+    
+    
+    
+}
+.text{
+    font-family: "Mallory",Verdana,Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: left;
+    
+    
+}
+.navbar{
+    border-style: ridge;
+    border-radius: 25px;
+    border-width: thin;
+}
+
+.nav-link {
+    color:pink;
+}
+
+.button{
+    margin-right: 1em;
+}
+

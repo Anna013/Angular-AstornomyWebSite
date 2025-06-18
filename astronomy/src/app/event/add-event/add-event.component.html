@@ -1,0 +1,188 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+  
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="md-auto">
+            <div class="row mt-3">
+                <div>
+                    <h3 class="float-md-start mb-0">Astronomy site</h3>
+                    <nav class="navbar navbar-dark bg-dark float-md-end">
+                        <a style="color: white" class="nav-link"  routerLink="/home">Home</a>
+                        <a style="color: white" class="nav-link"routerLink="/gallery">Gallery</a>
+                        <span><a style="color: white" class="nav-link" routerLink="/event/list"
+                                routerLinkActive="active">News</a></span>
+                        <span><a style="color: white" class="nav-link" routerLink="/register"
+                                routerLinkActive="active">Register</a></span>
+                        <span><a style="color: white" class="nav-link" routerLink="/login"
+                                routerLinkActive="active">Login</a></span>
+                        <a style="color: white" class="nav-link active" aria-current="page" href="#bottom">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="text-center">
+            <div class="container-sm">
+                <main class="px-3">
+                    <div class="row mt-5">
+                        <h1>create news</h1>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="create">
+                <div class="col-lg-6 mx-auto">
+                    <div class="form-group">
+                        <form (ngSubmit)="createEvent(eventForm)" #eventForm="ngForm">
+                            <div ngModelGroup="event">
+
+                                    <div class="ok">
+                                        <input type="text" class="form-control" ngModel #eventName="ngModel" name="name"
+                                            placeholder="Event name" required />
+                                    </div>
+
+
+                                <div class="error" *ngIf=" eventName.touched && eventName.invalid">
+                                    event name is required
+                                </div>
+
+                                <div class="ok mt-3">
+                                    <input type="datetime-local" class="form-control" ngModel #date="ngModel" name="date"
+                                        placeholder="Event date" required />
+                                </div>
+
+                                <div class="error" *ngIf=" date.touched  && date.invalid">
+                                    event date is required
+                                </div>
+                                
+
+                                <div class="ok input-group mt-3">
+                                    <span class="input-group-text">Descripton</span>
+                                    <textarea class="form-control" aria-label="With textarea" ngModel
+                                        #description="ngModel" name="description" placeholder="Event description"
+                                        required></textarea>
+                                </div>
+                                <div class="error" *ngIf="description.touched && description.invalid">
+                                    description is required
+                                </div>
+                                <div class="input-group mt-3">
+                                    <span class="input-group-text">Full text</span>
+                                    <textarea class="form-control" aria-label="With textarea" ngModel
+                                        #fullText="ngModel" name="fullText" placeholder="Full text"></textarea>
+                                </div>
+
+                                <div class="input-group mt-3">
+                                    <input type="text" class="form-control" ngModel name="imageUrl"
+                                        placeholder="event Image URL" #imageUrl="ngModel"
+                                        pattern="^http(s?)\://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(/\S*)?$" required>
+                                </div>
+
+                                <div class="error" *ngIf="imageUrl.dirty && imageUrl.invalid">
+                                    <div *ngIf="imageUrl.errors.required">
+                                        event Image URL is required
+                                    </div>
+                                    <div *ngIf="imageUrl.errors.pattern">
+                                        event Image URL does not seem to be a valid URL
+                                    </div>
+
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary btn-block" 
+                                [disabled]= "eventName.invalid || date.invalid || description.invalid || imageUrl.invalid ">Create event</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="mt-auto text-white-50">
+            <div class="row">
+                <p> Astronomy site</p>
+            </div>
+            <div class="row">
+                <section class="">
+                    <!-- Footer -->
+                    <footer class="image text-white text-center">
+                        <div class="container p-4">    
+                            <div class="row">                             
+                                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase">Contact</h5>
+
+                                    <p>
+                                        If you want to contact us, informations are offered. 
+                                        You don't know where we are? How to conect us? Want to know more? We will be glad to be able to help you and that you are interested in our small astronomical organization 
+                                    </p>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-center">Contact name</h5>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <p>Gmail:</p>
+                                        </li>
+                                        <li>
+                                            <p>Telefone:</p>
+                                        </li>
+                                        <li>
+                                            <p>Address:</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                               
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase mb-0">Info</h5>
+                                    
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <p>astns@gmail.com</p>
+                                        </li>
+                                        <li>
+                                            <p>0800 356118</p>
+                                        </li>
+                                        <li>
+                                            <p>Petrovaradin Fortres 11</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                           
+                            </div>
+                           
+                        </div>
+                      
+                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                            © 2020 Astronomy site
+                          
+                        </div>
+                        
+                    </footer>
+                    <!-- Footer -->
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

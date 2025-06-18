@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <!-- Custom styles for this template -->
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="md-auto">
+            <div class="row mt-3">
+                <div>
+                    <h3 class="float-md-start mb-0">Astronomy site</h3>
+                    <nav class="navbar navbar-dark bg-dark float-md-end">
+                        <span> <a style="color: white" class="nav-link" routerLink="/home">Home</a></span>
+                        <a style="color: white" class="nav-link" routerLink="/gallery">Gallery</a>
+                        <span><a style="color: white" class="nav-link" routerLink="/event/list"
+                                routerLinkActive="active">News</a></span>
+                        <span><a style="color: white" class="nav-link" routerLink="/register"
+                                routerLinkActive="active">Register</a></span>
+                        <span><a style="color: white" class="nav-link" routerLink="/login"
+                                routerLinkActive="active">Login</a></span>
+                        <a style="color: white" class="nav-link active" aria-current="page" href="#bottom">Contact</a>
+                        <button *ngIf = "isUser()"class="button btn-primary btn-dark" (click)= "logoutUser()" >User logout</button>
+                        <button  *ngIf="isAdmin()" class="button btn-primary btn-dark" (click)= "logoutAdmin()" > Admin logout</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="welcome">
+            <div class="row mt-5">
+                <div class="col-lg-6 mx-auto">
+                    <h2>Albums</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                            src="https://cff2.earth.com/uploads/2021/02/03085956/shutterstock_1141143581.jpg">
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 style="color: black">Observations</h5>
+                            </div>
+                            <p class="card-text" style="color: black">Observations of the Moon, Sun and planets from
+                                Petrovaradin Fortress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">10-06-2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                            src="https://gdb.rferl.org/78E864E0-8182-4061-9D57-1F6807D8D416_w408_s.jpg">
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 style="color: black">Observation of Jupiter in Belgrade</h5>
+                            </div>
+                            <p class="card-text" style="color: black">A unique opportunity for cooperation with the
+                                Belgrade Astronomical Society </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">02-06-2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                            src="https://britastro.org/sites/default/files/field/image/Solar%20observing-2.jpg">
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 style="color: black">Looking at the Sun</h5>
+                            </div>
+                            <p class="card-text" style="color: black">Observing the size of Sun and sunspots from
+                                Petrovaradin </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">28-05-2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                            src="https://i2.wp.com/vobanista.com/wp-content/uploads/2020/02/VOBANISTA_20190607_2.jpg?fit=1024%2C681&ssl=1">
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 style="color: black">Astronomy for kids</h5>
+                            </div>
+                            <p class="card-text" style="color: black">A unique opportunity for all children to enjoy the
+                                night charms of the Universe </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">27-05-2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                            src="https://zivojinmisic.rs/wp-content/uploads/2018/09/IMG_0061-1024x768.jpg">
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 style="color: black">Seminars</h5>
+                            </div>
+                            <p class="card-text" style="color: black">Seminars on various astronomical topics in Novi
+                                Sad</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">20-05-2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                            src="https://www.mojnovisad.com/files/_thumb/600x400/news/6/8/2/28682/28682-mesec.jpg">
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 style="color: black">Partial solar eclipse form Novi Sad</h5>
+                            </div>
+                            <p class="card-text" style="color: black">Looking at the beautiful partial solar eclipse
+                                form Novi Sad</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">17-05-2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <br>
+        <footer class="mt-auto text-white-50">
+            <div class="row">
+                <p> Astronomy site</p>
+            </div>
+            <div class="row">
+                <section class="">
+                    <!-- Footer -->
+                    <footer class="image text-white text-center">
+                        <div class="container p-4">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase">Contact</h5>
+
+                                    <p>
+                                        If you want to contact us, informations are offered.
+                                        You don't know where we are? How to conect us? Want to know more? We will be
+                                        glad to be able to help you and that you are interested in our small
+                                        astronomical organization
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-center">Contact name</h5>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <p>Gmail:</p>
+                                        </li>
+                                        <li>
+                                            <p>Telefone:</p>
+                                        </li>
+                                        <li>
+                                            <p>Address:</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase mb-0">Info</h5>
+
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <p>astns@gmail.com</p>
+                                        </li>
+                                        <li>
+                                            <p>0800 356118</p>
+                                        </li>
+                                        <li>
+                                            <p>Petrovaradin Fortres 11</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                            © 2020 Astronomy.com
+                        </div>
+
+                    </footer>
+                    <!-- Footer -->
+                </section>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+<div id="bottom"></div>
+
+</html>

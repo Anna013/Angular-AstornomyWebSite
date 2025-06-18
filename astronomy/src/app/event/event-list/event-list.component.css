@@ -1,0 +1,43 @@
+html,body{
+    background-image: url('https://www.teahub.io/photos/full/135-1351429_wallpaper-earth-planet-4k-8k-space-8k-earth.jpg');
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+ }
+
+ .news{
+     text-align:left;
+     background: transparent;
+     border-style: ridge;
+     border-radius: 25px;
+ }
+ .navbar{
+    border-style: ridge;
+    border-radius: 25px;
+    border-width: thin;
+}
+
+ .search{
+     text-align: right; 
+ }
+ .button{
+     margin-right: 1em;
+ }
+
+ .input{
+     font-style: italic;
+ }
+ .image{
+    background-image: url('https://t3.ftcdn.net/jpg/02/24/44/70/360_F_224447009_zSRwNZa8kd8pywa6YSaVmMecWayHF1j5.jpg');
+}
+.block-title {
+    background-image: url('https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg?size=626&ext=jpg&ga=GA1.2.198510956.1622073600');
+    text-align: center;
+    border-bottom: ridge;
+    border-radius: 25px;
+    
+}
+ .button{
+     vertical-align: bottom;
+ }

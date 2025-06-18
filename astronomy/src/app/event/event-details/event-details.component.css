@@ -1,0 +1,33 @@
+html,body{
+    background-image: url('https://www.teahub.io/photos/full/135-1351429_wallpaper-earth-planet-4k-8k-space-8k-earth.jpg');
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+ }
+ .image{
+    background-image: url('https://t3.ftcdn.net/jpg/02/24/44/70/360_F_224447009_zSRwNZa8kd8pywa6YSaVmMecWayHF1j5.jpg');
+}
+
+.back{
+    text-align:left;
+    background: transparent;
+    
+}
+.name{
+    text-align: center;
+}
+
+.secound{
+    margin-left: 3em;
+    background-color: rgba(0,0,0, 0.7);
+}
+.img{
+    margin-left: 1.5em;
+    text-align: center;
+}
+
+
+.description{
+    margin-left: 1em;
+}

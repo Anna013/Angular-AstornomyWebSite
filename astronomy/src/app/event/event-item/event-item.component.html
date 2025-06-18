@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="back">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="name">
+          <h4>{{event.name}}</h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="name ">
+          <button class=" btn  float-end btn-danger" *ngIf="isAdmin()" (click)="delete()">delete event</button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="img">
+            <div class="views-field views-field-field-news-image">
+              <img typeof="foaf:Image" width="200" height="200" [src]="event.imageUrl" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-10">
+          <div class="secound">
+            <div class="description">Date: {{event.date}}h</div>
+
+            <br>
+            <div class="description"> {{event.description}}</div>
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="button">
+          <button class="decrement" *ngIf="event.rating > 0" (click)="decrementRating()">-</button>
+          <span class="qty">{{event.rating}}</span>
+          <button class="increment" (click)="incrementRating()">+</button>
+
+          <button class="see float-end btn-primary btn-block " routerLink="/event/{{event.name}}">see more</button>
+        </div>
+        <br>
+      </div>
+    </div>
+
+  </div>
+</div>

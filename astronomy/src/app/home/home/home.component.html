@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <!-- Custom styles for this template -->
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="md-auto">
+            <div class="row mt-3">
+                <div>
+                    <h3 class="float-md-start mb-0">Astronomy site</h3>
+                    <nav class="navbar navbar-dark bg-dark float-md-end">
+                       <span> <a style="color: white" class="nav-link"  routerLink="/home" >Home</a></span>
+                         <a style="color: white" class="nav-link"  routerLink="/gallery">Gallery</a>
+                        <span><a style="color: white" class="nav-link" routerLink="/event/list"
+                                routerLinkActive="active">News</a></span>    
+                        <span><a style="color: white" class="nav-link" routerLink="/register"
+                                routerLinkActive="active">Register</a></span>
+                        <span><a style="color: white" class="nav-link" routerLink="/login"
+                                routerLinkActive="active">Login</a></span>
+                        <a style="color: white" class="nav-link active" aria-current="page" href="#bottom">Contact</a>
+                        <button *ngIf = "isUser()"class="button btn-primary btn-dark" (click)= "logoutUser()" >User logout</button>
+                        <button  *ngIf="isAdmin()" class="button btn-primary btn-dark" (click)= "logoutAdmin()" > Admin logout</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+            <div class="welcome">
+                <div class="row mt-5">
+                    <div class="col-lg-6 mx-auto">
+                    <h2>Welcome to astronomy site</h2>
+                   <p>Welcome to our amateur Astronomy Club. In most large cities and a number of rural areas, there are amateur astronomy clubs, where those interested in the hobby of astronomy gather to observe the sky, share telescopes, hear speakers, and help educate the public about the night sky.</p>
+                </div>
+            </div>
+
+            </div>
+
+
+
+
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-4">
+                    <div class="news">
+                        <div class="block block-views callout-blue-dk block-news-block block-views-news-block odd"
+                            id="block-views-news-block">
+                            <div class="block-inner clearfix">
+                                <div class="form-goup">
+                                    <h2 class="block-title">In the Events</h2>
+                                    
+                                </div>
+                                <br>
+                                <div class="content clearfix">
+                                    <div
+                                        class="view view-news view-id-news view-display-id-block teaser-list view-dom-id-0a8fcd0c1cffd83fdecf04a84f56b509">
+
+                                        <div class="view-content">
+                                            <div
+                                                class="views-row views-row-1 views-row-odd views-row-first clickable fitted">
+
+                                                <div class="views-field views-field-field-news-image">
+                                                    <div class="field-content"><img width="200" height="100"
+                                                            src="https://www.dnevnik.rs/sites/default/files/2019-03/16%20-%20astronomsko%20drustvo%201.jpg">
+                                                    </div>
+                                                </div>
+                                                <span class="views-field views-field-title"> <h5>Looking for pieces of Venus?</h5> </span>
+                                                <div class="views-field views-field-field-date">
+                                                    <div class="field-content"><span class="date-display-single"
+                                                            property="dc:date" datatype="xsd:dateTime"
+                                                            content="2021-04-26T00:00:00-04:00">Mon, 30/07/2021-22:00h</span>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="text"> <span class="field-content">A growing body of research suggests the planet Venus may have had an Earth-like 
+                                                    environment billions of years ago, with water and a thin atmosphere. Yet testing such theories...</span> </div>
+                                            </div>
+                                            <br>
+                                            <div class="views-row views-row-2 views-row-even clickable fitted">
+
+                                                <div class="views-field views-field-field-news-image">
+                                                    <div class="field-content">
+                                                        <div class="field-content">
+                                                            <img width="200" height="100"
+                                                                src="https://cdn.images.express.co.uk/img/dynamic/151/590x/Black-Hole-631371.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="views-field views-field-title"> <h5>Dazzling
+                                                    dispatches from the heart of a galaxy</h5> </span>
+                                                <div class="views-field views-field-field-date">
+                                                    <div class="field-content"><span class="date-display-single"
+                                                            property="dc:date" datatype="xsd:dateTime"
+                                                            content="2021-04-14T00:00:00-04:00">Wed, 20/07/2021-23:00h</span>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="text"> <span class="field-content">Mislav Baloković, a
+                                                        postdoctoral fellow at
+                                                        the Yale Center for Astronomy and Astrophysics, has a prime
+                                                        viewing spot for the most famous black hole humans have ever
+                                                        seen....</span> </div>
+                                            </div>
+                                            <br>
+                                            
+                                            <div
+                                                class="views-row views-row-4 views-row-even views-row-last clickable fitted">
+
+                                                <div class="views-field views-field-field-news-image">
+                                                    <div class="field-content">
+                                                        <div class="field-content">
+                                                            <img width="200" height="100"
+                                                                src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2020_30/3399571/telescopes-kr-2x1-tease-200724-3399571.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="views-field views-field-title"><h5>Lighting a path to
+                                                    Planet Nine</h5> </span>
+                                                <div class="views-field views-field-field-date">
+                                                    <div class="field-content"><span class="date-display-single"
+                                                            property="dc:date" datatype="xsd:dateTime"
+                                                            content="2020-10-27T00:00:00-04:00">Tue, 27/07/2021-23:00h</span>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="text"> <span class="field-content">The search for Planet
+                                                        Nine — a
+                                                        hypothesized ninth planet in our solar system — may come down to
+                                                        pinpointing the faintest orbital trails in an incredibly
+                                                        dark...</span> </div>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="more-link">
+                                            <a routerLink="/event/list">
+                                                More events... </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="news">
+                        <div class="block block-views callout-blue-dk block-news-block block-views-news-block odd"
+                            id="block-views-news-block">
+                            <div class="block-inner clearfix">
+                                <div class="form-goup">
+                                    <h2 class="block-title">Woman in science</h2>
+                                </div>
+                                <br>
+                                <div class="content clearfix">
+                                    <div
+                                        class="view view-news view-id-news view-display-id-block teaser-list view-dom-id-0a8fcd0c1cffd83fdecf04a84f56b509">
+
+                                        <div class="view-content">
+                                            <div
+                                                class="views-row views-row-1 views-row-odd views-row-first clickable fitted">
+
+                                                <div class="views-field views-field-field-news-image">
+                                                    <div class="field-content"><img width="200" height="100"
+                                                            src="https://www.ouritdept.co.uk/wp-content/uploads/2013/07/it-services-for-charity.jpg">
+                                                    </div>
+                                                </div>
+                                                <span class="views-field views-field-title"> <span
+                                                        class="field-content"><a
+                                                            href="https://eos.org/opinions/eight-ways-to-support-women-in-science">National
+                                                            Academy of Sciences Elects New Members</a></span> </span>
+                                                <div class="views-field views-field-field-date">
+                                                    <div class="field-content"><span class="date-display-single"
+                                                            property="dc:date" datatype="xsd:dateTime"
+                                                            content="2021-04-26T00:00:00-04:00">Mon, 26/06/2021</span>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="text"> <span class="field-content">National Academy of
+                                                        Sciences Elects New
+                                                        Members — Including a Record Number of Women — To succeed in science, women must overcome subtle biases that favor men as well as a culture of overt sexual harassment. These barriers to success result in the underrepresentation of women in science: In the United States, women receive 50% of geoscience Ph.D.’s but represent only 20% of geoscience faculty positions. The systemic underrepresentation of women in science fosters a culture of sexual harassment, 
+                                                        which in turn discourages women from careers in science and perpetuates underrepresentation...</span> </div>
+                                            </div>
+                                            <br>
+ 
+                                        </div>
+
+                                        <div class="more-link">
+                                            <a href="https://eos.org/opinions/eight-ways-to-support-women-in-science">
+                                                read more... </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="news">
+                        <div class="block block-views callout-blue-dk block-news-block block-views-news-block odd"
+                            id="block-views-news-block">
+                            <div class="block-inner clearfix">
+                                <div class="form-goup">
+                                    <h2 class="block-title">Observations</h2>
+                                </div>
+                                <br>
+                                <div class="content clearfix">
+                                    <div
+                                        class="view view-news view-id-news view-display-id-block teaser-list view-dom-id-0a8fcd0c1cffd83fdecf04a84f56b509">
+
+                                        <div class="view-content">
+                                            <div
+                                                class="views-row views-row-1 views-row-odd views-row-first clickable fitted">
+
+                                                <div class="views-field views-field-field-news-image">
+                                                    <div class="field-content"><img width="200" height="200"
+                                                            src="https://img.goglasi.com/img/181664875">
+                                                    </div>
+                                                </div>
+                                                <span class="views-field views-field-title"> 
+                                                    <h5>Observations near the Petrovaradin Fortress every three days-see you!</h5> </span>
+                                                    <div class="views-field views-field-field-date">
+                                                        <div class="field-content"><span class="date-display-single"
+                                                                property="dc:date" datatype="xsd:dateTime"
+                                                                content="2021-04-26T00:00:00-04:00">Mon, Wen, Sat at 21:00h</span>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                <div class="text"> <span class="field-content">The Astronomical Society of Novi Sad (ADNOS) is the oldest astronomical society in Vojvodina. It was founded in 1974, and today has about 300 members.
+                                                    The Novi Sad Astronomical Observatory at the Petrovaradin Fortress is a facility that enables the realization of observation activities and processing of the obtained data and photographs.
+                                                        Observation always starts at 21:00h, adress: Petrovaradin Fortres 11. Hope we see you! </span> </div>
+                                            </div>
+                                            <br>
+ 
+                                        </div>
+
+                                        <div class="more-link">
+                                            <a href="#bottom">
+                                                contact us for more information </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row mt-5 align-items-center">
+                <div class="col-lg-4 ">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://thumbs.dreamstime.com/z/luxury-house-interior-wide-glass-windows-amateur-telescope-indoor-home-telescope-sky-neighbour-surveillance-121755384.jpg"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Best telescopes for beginners</h5>
+                            <p class="card-text" style="color: black">Whatever your budget, experience in astronomy or targets that interest you most, 
+                                there’s a great telescope out there just for you — we’ve rounded up the very best</p>
+                            <a href="https://www.space.com/15693-telescopes-beginners-telescope-reviews-buying-guide.html" class="btn btn-primary">Go to see more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://rxscience.org/wp-content/uploads/2018/09/10-most-amazing-galaxies-1280x720.jpg"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">10 Most Amazing Galaxies</h5>
+                            <p class="card-text" style="color: black">Growing up we have all seen beautiful images of galaxies in the universe. All the galaxies are full of amazing space discoveries Like our Milky Way.
+                                 They also possess some specific shape and pattern.Here we have listed the 10 most amazing galaxies</p>
+                            <a href="https://rxscience.org/10-most-amazing-galaxies-in-the-universe/" class="btn btn-primary">Go to see more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://nextvame.com/wp-content/uploads/2021/04/LIRTY-A-happy-meteor-shower-in-Poland-today-Do.jpeg"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Meteor shower in July</h5>
+                            <p class="card-text" style="color: black">Like the Eta Aquariids in May, the Delta Aquariid meteor shower in July favors the Southern Hemisphere and tropical latitudes in the Northern Hemisphere. 
+                                Yet the bright waning gibbous moon is sure to obtrude on this year's production.</p>
+                            <a href="https://earthsky.org/astronomy-essentials/earthskys-meteor-shower-guide/" class="btn btn-primary">Go to see more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <br>
+        <footer class="mt-auto text-white-50">
+            <div class="row">
+                <p> Astronomy site</p>
+            </div>
+            <div class="row">
+                <section class="">
+                    <!-- Footer -->
+                    <footer class="image text-white text-center">
+                       
+                        <div class="container p-4">
+                            
+                            <div class="row">
+                                
+                                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase">Contact</h5>
+
+                                    <p>
+                                        If you want to contact us, informations are offered. 
+                                        You don't know where we are? How to conect us? Want to know more? We will be glad to be able to help you and that you are interested in our small astronomical organization 
+                                    </p>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-center">Contact name</h5>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <p>Gmail:</p>
+                                        </li>
+                                        <li>
+                                            <p>Telefone:</p>
+                                        </li>
+                                        <li>
+                                            <p>Address:</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                    <h5 class="text-uppercase mb-0">Info</h5>
+                                    
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <p>astns@gmail.com</p>
+                                        </li>
+                                        <li>
+                                            <p>0800 356118</p>
+                                        </li>
+                                        <li>
+                                            <p>Petrovaradin Fortres 11</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                           
+                        </div>
+
+                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                            © 2020 Astronomy.com
+                        </div>
+                       
+                    </footer>
+                 
+                </section>
+            </div>
+          
+        </footer>
+    </div>
+    
+</body>
+<div id="bottom"></div>
+
+</html>
